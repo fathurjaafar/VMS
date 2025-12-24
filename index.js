@@ -14,6 +14,15 @@ const firebaseConfig = {
   appId: "1:295960341156:web:dc20d4e37520e5d0239431"
 };
 
+    // 2. Initialize
+    if (!firebaseConfig.apps.length) {
+        firebaseConfig.initializeApp(firebaseConfig);
+    }
+    const database = firebase.database();
+
+    // 3. Test Log (To see if the code is actually running)
+    console.log("Firebase is initialized!");
+    
     // --- Core Functions ---
 
     /**
