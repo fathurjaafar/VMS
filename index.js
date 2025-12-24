@@ -15,9 +15,7 @@ const firebaseConfig = {
 };
 
     // 2. Initialize
-    if (!firebaseConfig.apps.length) {
-        firebaseConfig.initializeApp(firebaseConfig);
-    }
+    firebase.initializeApp(firebaseConfig);
     const database = firebase.database();
 
     // 3. Test Log (To see if the code is actually running)
