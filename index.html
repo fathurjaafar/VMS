@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container visitor-form">
+        <h1>Visitor Entry Register</h1>
+        <form id="entryForm">
+            <label for="plate_number">Plate Number (e.g., PNG 1234)</label>
+            <input type="text" id="plate_number" placeholder="Enter Plate Number" required maxlength="15" pattern="[A-Za-z0-9\s]+" title="Letters and numbers only"> 
+
+            <label for="driver_name">Your Name</label>
+            <input type="text" id="driver_name" placeholder="Enter Full Name" required maxlength="50">
+
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone_number" placeholder="e.g., 01234567890" required maxlength="20">
+
+            <label for="resident_unit">Resident Unit (Optional, e.g., B-3-19)</label>
+            <input type="text" id="resident_unit" placeholder="Enter Resident Unit" required maxlength="15">
+
+            <div class="privacy">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent" style="display:inline;">I agree to the <a href="/privacy policy" target="_blank">Privacy Policy</a> for the data collection and security purposes.</label>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+            <div id="message" class="hidden"></div>
+        </form>
+    </div>
+
+    <div class="container dashboard">
+        <h2>Security Dashboard</h2>
+        <p class="subtitle">Active Visitors: Those who have entered and not yet exited.</p>
+        <table id="activeVisitorsTable">
+            <thead>
+                <tr>
+                    <th>Time In</th>
+                    <th>Plate No.</th>
+                    <th>Resident Unit</th>
+                    <th>Details</th>
+                    <th>Action</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

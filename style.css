@@ -1,0 +1,177 @@
+/* General Styling  */
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.visitor-form {
+    max-width: 450px;
+    border-top: 5px solid #007bff;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.privacy {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+#submitBtn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background-color: #28da10;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.0em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#submitBtn:hover {
+    background-color: #1e7e34;
+}
+#message {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.success { background-color: #d4edda; color: #155724; }
+.hidden { display: none;}
+
+/* Dashboard Styling */
+.dashboard {
+    border-top: 5px solid #ffc107;
+}
+h2 { 
+    color: #3d0606;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+table{ 
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e7dcdc;
+}
+th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #495057;
+}
+.details-btn {
+    padding-right: 50%;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.checkout-btn {
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.checkout-btn:hover {
+    background-color: #c82333 ;
+}
+/* Modal for Details (for the guard) */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: none; /* Hidden by default */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Status Badge General Style*/
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Specific Colors */
+.status-inside {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-exited {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+}
